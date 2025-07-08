@@ -14,7 +14,7 @@ mkdir -p $home_config_dir
 files=".zshrc .gitconfig .p10k.zsh .zprofile .npmrc"
 
 # list of directories to symlink
-configs="kitty nvim btop dunst flameshot fastfetch hypr"
+configs="kitty nvim btop dunst flameshot fastfetch hypr tofi"
 
 # Symlink files
 for file in $files; do

@@ -6,17 +6,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Add ~/.local/bin and other common paths to PATH
-export PATH="$HOME/bin:$HOME/.local/bin:/usr/local/bin:$HOME/.npm-global/bin:$PATH"
-
 #Oh My Zsh installation path
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set theme (you can change this or use 'random' if you want)
 ZSH_THEME="robbyrussell"
-
-# Preferred editor
-export EDITOR=nvim
 
 # Prompt: user@host + current directory, colored
 PROMPT='%F{green}%n@%m%f %F{blue}%~%f %# '

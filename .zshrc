@@ -68,7 +68,3 @@ export QT_QPA_PLATFORM=wayland
 export SDL_VIDEODRIVER=wayland
 export _JAVA_AWT_WM_NONREPARENTING=1
 ZSH_HIGHLIGHT_STYLES[comment]='fg=245'
-
-if uwsm check may-start && uwsm select; then
-    exec uwsm start default
-fi

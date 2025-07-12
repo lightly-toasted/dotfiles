@@ -1,6 +1,7 @@
 return {
     "hrsh7th/nvim-cmp",
     dependencies = {
+      "onsails/lspkind.nvim",
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
@@ -25,7 +26,16 @@ return {
           { name = "luasnip" },
           { name = "buffer" },
           { name = "path" },
+          { name = "codeium" },
         }),
+        formatting = {
+            format = require('lspkind').cmp_format({
+                mode = "symbol",
+                maxwidth = 50,
+                ellipsis_char = '...',
+                symbol_map = { Codeium = "", }
+            })
+        }
       })
     end,
 }

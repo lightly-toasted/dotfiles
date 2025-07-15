@@ -1,4 +1,3 @@
-# vim: set fileformat=json :
 {
     "label" : "lock",
     "action" : "hyprlock",

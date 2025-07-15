@@ -45,9 +45,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
 alias gs='git status'
-
-# If you want to add more aliases, do so below
-# alias myalias='command'
+alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
 
 # Load user-specific custom scripts here if needed
 # source $ZSH_CUSTOM/mycustom.zsh

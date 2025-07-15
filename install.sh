@@ -10,7 +10,7 @@ mkdir -p $home_config_dir
 files=".zshrc .zprofile .zshenv .p10k.zsh .gitconfig .npmrc"
 
 # list of directories to symlink
-configs="kitty nvim btop dunst fastfetch hypr tofi autostart waybar"
+configs="kitty nvim btop dunst fastfetch hypr tofi autostart waybar wlogout"
 
 for file in $files; do
     echo "Creating symlink for $file"

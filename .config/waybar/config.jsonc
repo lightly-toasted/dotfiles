@@ -105,7 +105,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/mouse-action": {
-        "format": " {}",
+        "format": "    {}",
         "exec": "tail -n 1 -F ~/.cache/mouse-action 2>/dev/null",
         "return-type": "text",
         "restart-interval": false

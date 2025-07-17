@@ -46,6 +46,7 @@ alias ll='ls -lh --color=auto'
 alias la='ls -lha --color=auto'
 alias gs='git status'
 alias vencord='sh -c "$(curl -sS https://raw.githubusercontent.com/Vendicated/VencordInstaller/main/install.sh)"'
+alias waybar-reload='pkill waybar && hyprctl dispatch exec waybar'
 
 # Load user-specific custom scripts here if needed
 # source $ZSH_CUSTOM/mycustom.zsh

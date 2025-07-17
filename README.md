@@ -5,5 +5,5 @@ my dotfiles for arch
 ```sh
 git clone https://github.com/lightly-toasted/dotfiles.git ~/dotfiles
 cd ~/dotfiles
-./install.sh
+./scripts/install.sh
 ```

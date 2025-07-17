@@ -3,8 +3,8 @@
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 5, // Waybar height (to be removed for auto height)
     "output": "HDMI-A-1",
-    "modules-left": ["custom/media"],
-    "modules-center": [],
+    "modules-left": ["custom/mouse-action"],
+    "modules-center": ["custom/media"],
     "modules-right": ["pulseaudio", "network", "backlight","cpu","memory","battery", "battery#bat2", "clock", "tray"],
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ ",
@@ -103,5 +103,11 @@
         "escape": true,
         "exec": "$HOME/dotfiles/scripts/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
+    "custom/mouse-action": {
+        "format": " {}",
+        "exec": "tail -n 1 -F ~/.cache/mouse-action 2>/dev/null",
+        "return-type": "text",
+        "restart-interval": false
     }
 }

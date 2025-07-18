@@ -94,7 +94,9 @@
         "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
-        "on-click": "pavucontrol"
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-middle": "pavucontrol",
+        "on-click-right": "easyeffects"
     },
     "systemd-failed-units": {
         "hide-on-ok": false,

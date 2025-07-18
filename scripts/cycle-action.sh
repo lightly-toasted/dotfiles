@@ -9,6 +9,7 @@ fi
 
 case "$CURRENT_ACTION" in
     "deafen") NEW_ACTION="sober-lag" ;;
+    "sober-lag") NEW_ACTION="autoclick" ;;
     *) NEW_ACTION="deafen"
 esac
 

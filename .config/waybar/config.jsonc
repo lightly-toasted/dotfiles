@@ -107,6 +107,8 @@
     "custom/mouse-action": {
         "format": "    {}",
         "exec": "tail -n 1 -F ~/.cache/mouse-action 2>/dev/null",
+        "on-click": "~/dotfiles/scripts/run-action.sh",
+        "on-scroll-down": "~/dotfiles/scripts/cycle-action.sh",
         "return-type": "text",
         "restart-interval": false
     }

@@ -3,18 +3,18 @@
 * {
     background-image: none;
     font-size: 20px;
-    font-family: "Fira Code";
 }
 
 window {
     background-color: rgba(17, 17, 17, 0.45)
 }
 
+
 button {
     border-radius: 0px;
-    color: #b4befe;
-    border-color: #b4befe;
-    background-color: rgba(17, 17, 27, 0.781);
+    color: #bebebe;
+    border-color: #bebebe;
+    background-color: rgba(17, 17, 17, 0.781);
     outline-style: none;
     border-style: solid;
 	border-width: 3px;
@@ -27,52 +27,52 @@ button {
 }
 
 button:hover,button:focus {
-    background-color: rgba(37, 37, 68, 0.541);
-    background-size: 30%;
+    background-color: rgba(37, 37, 37, 0.541);
+    background-size: 22%;
     animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
+    transition: all 0.1s linear;
 }
 
 #lock {
     border-top-left-radius: 15px;
-    background-image: image(url("./icons/lock.png"), url("./icons/lock.png"));
+    background-image: image(url("./assets/lock.svg"));
 }
 
 #logout {
-    border-bottom-left-radius: 15px;
-    background-image: image(url("./icons/logout.png"), url("./wlogout/icons/logout.png"));
+    background-image: image(url("./assets/logout.svg"));
 }
 
 #suspend {
-    background-image: image(url("./icons/suspend.png"), url("./icons/suspend.png"));
+    border-top-right-radius: 15px;
+    background-image: image(url("./assets/suspend.svg"));
 }
 
 #hibernate {
-    border-top-right-radius: 15px;
-    background-image: image(url("./icons/hibernate.png"), url("./icons/hibernate.png"));
+    border-bottom-left-radius: 15px;
+    background-image: image(url("./assets/hibernate.svg"));
 }
 
 #shutdown {
-    background-image: image(url("./icons/shutdown.png"), url("./icons/shutdown.png"));
+    background-image: image(url("./assets/shutdown.svg"));
 }
 
 #reboot {
     border-bottom-right-radius: 15px;
-    background-image: image(url("./icons/reboot.png"), url("./icons/reboot.png"));
+    background-image: image(url("./assets/reboot.svg"));
 }
 
-#lock, #suspend,#hibernate {
-    border-bottom: #b4befe solid 1px;
+#lock, #logout, #suspend {
+    border-bottom: #bebebe solid 1px;
 }
 
-#logout,#shutdown,#reboot {
-    border-top: #b4befe solid 1px;
+#hibernate,#shutdown,#reboot {
+    border-top: #bebebe solid 1px;
 }
 
-#logout,#lock,#suspend,#shutdown{
-    border-right: #b4befe solid 1px;
+#logout,#lock,#hibernate,#shutdown{
+    border-right: #bebebe solid 1px;
 }
 
-#suspend,#shutdown,#hibernate,#reboot{
-    border-left: #b4befe solid 1px;
+#suspend,#shutdown,#logout,#reboot{
+    border-left: #bebebe solid 1px;
 }

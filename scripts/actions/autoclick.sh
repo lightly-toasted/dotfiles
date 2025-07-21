@@ -9,11 +9,11 @@ fi
 current=$(cat "$AUTOCLICK_FILE")
 if [ "$current" = "0" ]; then
     echo "1" > "$AUTOCLICK_FILE"
-    notify-send "Autoclicker" "Stopped"
+    notify-send -r 120000 "Autoclicker" "Stopped"
     exit 0
 else
     echo "0" > "$AUTOCLICK_FILE"
-    notify-send "Autoclicker" "Started"
+    notify-send -r 120000 "Autoclicker" "Started"
 fi
 
 while :; do

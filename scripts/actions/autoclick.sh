@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AUTOCLICK_FILE="/tmp/autoclick"
+AUTOCLICK_FILE="/run/user/$(id -u)/autoclick"
 
 if [ ! -f "$AUTOCLICK_FILE" ]; then
     echo "0" > "$AUTOCLICK_FILE"

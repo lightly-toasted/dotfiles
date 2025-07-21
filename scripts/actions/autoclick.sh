@@ -3,7 +3,7 @@
 AUTOCLICK_FILE="/run/user/$(id -u)/autoclick"
 
 if [ ! -f "$AUTOCLICK_FILE" ]; then
-    echo "0" > "$AUTOCLICK_FILE"
+    echo "1" > "$AUTOCLICK_FILE"
 fi
 
 current=$(cat "$AUTOCLICK_FILE")

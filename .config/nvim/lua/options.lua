@@ -14,3 +14,12 @@ vim.opt.undofile = true
 vim.opt.undodir = vim.fn.stdpath("config") .. "/undo"
 vim.cmd("silent !mkdir -p " .. vim.opt.undodir._value)
 
+vim.api.nvim_create_autocmd("UIEnter", {
+    callback = function()
+	if vim.g.started_by_firenvim then
+        	vim.opt.lines = 100
+        	vim.opt.columns = 300
+	end
+    end,
+})
+

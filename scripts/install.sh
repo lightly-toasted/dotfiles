@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 dotfiles_dir=~/dotfiles
 config_dir=$dotfiles_dir/.config

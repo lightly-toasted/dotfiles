@@ -1,2 +1,2 @@
 #!/bin/bash
-hyprctl dispatch sendshortcut CTRL+SHIFT, D, 'class:^(discord)$'
+hyprctl dispatch sendshortcut CTRL+SHIFT, D, 'class:^(vesktop)$'

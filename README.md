@@ -1,4 +1,8 @@
 # dotfiles
+> [!NOTE]
+> This dotfiles repository is **no longer maintained** and has been archived.
+> All new configurations are now managed in my [nix-config](https://github.com/lightly-toasted/nix-config) repository.
+
 my dotfiles for arch
 
 ## Install
